@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>潘奕炜 · 个人主页</title>
+  <meta name="description" content="潘奕炜（Yiwei Pan）的个人主页：作品与联系方式">
+
+  <!-- 字体文件在 fonts/ 里，由 style.css 的 @font-face 加载；预加载首屏大标题字体 -->
+  <link rel="preload" href="fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== 顶部导航 ========== -->
+  <header class="nav">
+    <a href="#top" class="status">
+      <span class="status__dot"></span>可接项目
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">作品 <sup>[6]</sup></a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+      <a href="#contact" class="btn btn--dark nav__cta-mobile">聊一聊 <span class="arrow">↗</span></a>
+    </nav>
+
+    <a href="#contact" class="btn btn--dark nav__cta">聊一聊 <span class="arrow">↗</span></a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== 首屏：自我介绍 ========== -->
+    <section class="hero" id="about">
+      <div class="hero__card">
+        <!-- 装饰圆弧 -->
+        <span class="hero__arc hero__arc--1" aria-hidden="true"></span>
+        <span class="hero__arc hero__arc--2" aria-hidden="true"></span>
+
+        <h1 class="hero__name" aria-label="潘奕炜 Yiwei Pan">
+          <span class="hero__name--outline">YIWEI</span>
+          <span class="hero__name--solid">PAN</span>
+        </h1>
+
+        <!-- 头像占位：以后换成 <img src="images/me.png" alt="我的照片"> -->
+        <div class="hero__avatar" aria-hidden="true">
+          <svg viewBox="0 0 200 220" class="hero__silhouette">
+            <circle cx="100" cy="72" r="44"/>
+            <path d="M10 220c0-55 40-92 90-92s90 37 90 92z"/>
+          </svg>
+        </div>
+
+        <div class="hero__intro">
+          <h2>前端开发者</h2>
+          <p>用代码做出清晰、好用、有细节的网页。<br>这里写一两句关于你自己的话。</p>
+          <a href="#contact" class="btn btn--dark">一起合作 <span class="arrow">↗</span></a>
+        </div>
+
+        <ul class="hero__social">
+          <li><a href="https://github.com/panyiwei324-stack" target="_blank" rel="noopener" class="chip">GitHub</a></li>
+          <li><a href="https://space.bilibili.com/86922353" target="_blank" rel="noopener" class="chip">B 站</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 作品展示 ========== -->
+    <section class="section work" id="work">
+      <div class="section__head reveal">
+        <h2 class="section__title">精选作品 <span>(06)</span></h2>
+        <p class="section__desc">一些最近做的项目。先用占位内容，之后换成你的真实作品。</p>
+      </div>
+
+      <div class="work__grid">
+        <!-- 每个 article 是一张作品卡片，复制它就能加新作品 -->
+        <article class="project reveal">
+          <a href="#" class="project__link">
+            <div class="project__thumb" style="--hue: 210"><span class="project__go">↗</span></div>
+            <div class="project__meta">
+              <h3>项目名称 01</h3>
+              <span>网页设计 · 2026</span>
+            </div>
+          </a>
+        </article>
+        <article class="project reveal">
+          <a href="#" class="project__link">
+            <div class="project__thumb" style="--hue: 30"><span class="project__go">↗</span></div>
+            <div class="project__meta">
+              <h3>项目名称 02</h3>
+              <span>前端开发 · 2026</span>
+            </div>
+          </a>
+        </article>
+        <article class="project reveal">
+          <a href="#" class="project__link">
+            <div class="project__thumb" style="--hue: 150"><span class="project__go">↗</span></div>
+            <div class="project__meta">
+              <h3>项目名称 03</h3>
+              <span>小程序 · 2025</span>
+            </div>
+          </a>
+        </article>
+        <article class="project reveal">
+          <a href="#" class="project__link">
+            <div class="project__thumb" style="--hue: 270"><span class="project__go">↗</span></div>
+            <div class="project__meta">
+              <h3>项目名称 04</h3>
+              <span>品牌设计 · 2025</span>
+            </div>
+          </a>
+        </article>
+        <article class="project reveal">
+          <a href="#" class="project__link">
+            <div class="project__thumb" style="--hue: 0"><span class="project__go">↗</span></div>
+            <div class="project__meta">
+              <h3>项目名称 05</h3>
+              <span>数据可视化 · 2025</span>
+            </div>
+          </a>
+        </article>
+        <article class="project reveal">
+          <a href="#" class="project__link">
+            <div class="project__thumb" style="--hue: 90"><span class="project__go">↗</span></div>
+            <div class="project__meta">
+              <h3>项目名称 06</h3>
+              <span>个人练习 · 2024</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== 联系方式 ========== -->
+    <section class="contact" id="contact">
+      <div class="contact__inner reveal">
+        <p class="contact__eyebrow"><span class="status__dot"></span>目前可接新项目</p>
+        <h2 class="contact__title">LET'S WORK<br>TOGETHER</h2>
+
+        <button class="contact__email" id="copyEmail" data-email="panyiwei324@gmail.com">
+          <span class="contact__email-text">panyiwei324@gmail.com</span>
+          <span class="contact__email-hint" id="copyHint">点击复制</span>
+        </button>
+
+        <ul class="contact__social">
+          <li><a href="https://github.com/panyiwei324-stack" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://space.bilibili.com/86922353" target="_blank" rel="noopener">B 站 ↗</a></li>
+        </ul>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year">2026</span> 潘奕炜 Yiwei Pan</span>
+        <a href="#top">回到顶部 ↑</a>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
